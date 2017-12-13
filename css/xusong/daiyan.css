@@ -1,0 +1,454 @@
+/*VCR background etc*/
+html{height:100%}
+body{height:100%}
+#page-wrap{height: 100%}
+img{
+  display: block;
+  border:0;
+  vertical-align: top;
+  margin:0;
+}
+.hide{
+  width:0;
+  height:0;
+  overflow: hidden;
+  text-indent: -9999em;
+  display: none;
+}
+.videotop-tag i{
+  width:108px;
+  height:60px;
+  position: absolute;
+  z-index: 4;
+  background: url(../../img/xusong/daiyan/sp_icon.png) no-repeat;
+}
+.videotop-tag .tag-topLeft{
+  top:50px;
+  left:60px;
+  background-position: 0 0;
+}
+.videotop-tag .tag-topRight{
+  top:50px;
+  right:50px;
+  background-position: -108px 0;
+}
+.videotop-tag .tag-bottomLeft{
+  left:60px;
+  bottom:50px;
+  background-position: 0 -70px;
+}
+.videotop-tag .tag-bottomRight{
+  right:50px;
+  bottom:50px;
+  background-position: -108px -70px;
+}
+.logo{position: absolute}
+.global-logo{
+  position: fixed;
+  top:10%;
+  left:18%;
+  z-index:9;
+  display: none;
+}
+.logo a{float:left;}
+.section1 .logo{top:10%;left:50%;margin-left:-97px;}
+.sw-logo img{width:89px}
+.global-logo img{width: 89px;}
+.swsy-logo{ margin-left: 10px;}
+.swsy-logo img{width:95px}
+.global-logo .swsy-logo img{width:95px}
+/*the first page*/
+.section{position: relative;overflow: hidden;height: 100%}
+.modle-bg{
+  width:100%;
+  height:100%;
+  position: absolute;
+  top:0;
+  left:0;
+  overflow: hidden;
+  transform: scale(1.2);
+  transition: all 8s linear;
+}
+.active .modle-bg,.last-page .model-bg{transform: scale(1)}
+.modle-bg img{
+  width:1920px;
+  height:1060px;
+  position: absolute;
+  top:50%;
+  right:50%;
+  margin:-530px -960px 0 0;
+  transition: all 2s linear;
+}
+.topic-tit{
+  width:480px;
+  height:350px;
+  position: absolute;
+  top:20%;
+  left:50%;
+  margin-left:-240px;
+}
+.topic-tit img{position: absolute}
+.topic-tit .txt-qs{top:0;left:0}
+.topic-tit .txt-sy{top:8px; left:233px}
+.topic-tit .txt-qs, .topic-tit .txt-sy, .video-moudle{
+  filter: blur(30px);
+  opacity: 0;
+  transition: all 1.6s linear;
+}
+.topic-tit .txt-sw{top:195px;left:10px}
+.topic-tit .txt-xs{top:200px;left:270px}
+.topic-tit .txt-sw, .topic-tit .txt-xs{
+  transform:translateY(100px);
+  opacity: 0;
+  transition: all 1.6s .6s;
+}
+.active .topic-tit .txt-sw, .active .topic-tit .txt-xs{
+  transform: translateY(0);
+  opacity: 1;
+}
+.topic-tit .txt-dy{
+  top:315px;
+  left:50%;
+  margin-left: -143px;
+  transform: translateY(60px);
+  opacity: 0;
+  transition: all 1.6s 1.2s;
+}
+.active .topic-tit .txt-dy{
+  transform: translateY(0);
+  opacity: 1;
+}
+.active .topic-tit .txt-qs, .active .topic-tit .txt-sy, .active .video-moudle{
+  filter: blur(0);
+  opacity: 1;
+}
+.video-moudle{
+  width:70px;
+  height:70px;
+  position: absolute;
+  top:20%;
+  left:50%;
+  margin:295px 0 0 150px;
+  cursor: pointer;
+  transition: all 2s .8s;
+}
+.video-tag{width:100%;height:100%;position: relative}
+.video-tag s{position: absolute;top:50%;left:50%;
+  background: url(../../img/xusong/daiyan/video_btn.png) no-repeat}
+@keyframes rotateAntiClockwise {
+  0%{transform: rotate(0deg)}100%{transform: rotate(-360deg)}
+}
+.video-tag .outer-circle{
+  width:70px;height:70px;
+  margin:-35px 0 0 -35px;background-position: 0 -28px;
+  animation: rotateAntiClockwise 5s linear infinite;
+}
+.video-tag .inner-triangle{
+  width:36px;height:36px;
+  margin:-18px 0 0 -13px;
+  background-position: -93px -46px;
+}
+.video-title{
+  text-indent: -9999em;
+  width:0;
+  height:25px;
+  position: absolute;
+  bottom:10px;
+  left:70px;
+  background: url(../../img/xusong/daiyan/video_btn.png) no-repeat 0 0;
+}
+/*second page*/
+.theme-slogan{
+  width: 397px;
+  height: 301px;
+  top:22%;
+  left:18%;
+  position: absolute;
+  -webkit-transform: translateY(200px);
+  -moz-transform: translateY(200px);
+  -o-transform: translateY(200px);
+  transform: translateY(200px);
+  opacity: 0;
+  -webkit-transition: all 2s 1s;
+  -moz-transition: all 2s 1s ;
+  -o-transition: all 2s 1s ;
+  transition: all 2s 1s ;
+}
+.active .theme-slogan, .last-page .theme-slogan{
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+.theme-slogan .slogan-img{
+  width:100%;
+  height:100%
+}
+.flag-img{
+  position: absolute;
+  bottom: -30px;
+  right:60px;
+  -webkit-filter: blur(10px);
+  -ms-filter: blur(10px);
+  -moz-filter:blur(10px);
+  -webkit-transition: all 2s 2s ;
+  -moz-transition: all 2s 2s ;
+  -ms-transition: all 2s 2s ;
+  -o-transition: all 2s 2s ;
+  transition: all 2s 2s ;
+}
+.active .flag-img, .last-page .flag-img{
+  -webkit-filter: blur(0);
+  -ms-filter: blur(0);
+  -moz-filter:blur(0);
+  opacity: 1;
+}
+.detail-info{
+  position: absolute;
+  top:50%;
+  left:18%;
+  font-size: 14px;
+  margin-top:40px;
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  -o-transform: translateY(100px);
+  transform: translateY(100px);
+  opacity: 0;
+  -webkit-transition: all 2s 2s ;
+  -moz-transition: all 2s 2s ;
+  -ms-transition: all 2s 2s ;
+  -o-transition: all 2s 2s ;
+  transition: all 2s 2s;
+}
+.active .detail-info, .last-page .detail-info{
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+.info-box{
+  padding:20px;
+  width:355px;
+  color:#fff;
+  line-height: 30px;
+  text-align: justify;
+  border:1px solid #cfccc1;
+}
+:root .info-box{filter:none}
+.init-desc{width:360px;}
+.whole-desc{
+  width: 1000px;
+  display: none;
+}
+.whole-desc p{text-indent: 2em}
+.expand-detail{
+  padding-left:40px;
+  width:75px;
+  height:35px;
+  color:#fff;
+  line-height: 35px;
+  border:1px solid #cfccc1;
+  position: absolute;
+  left: 0;
+  bottom:-36px;
+  overflow: hidden;
+  cursor: pointer;
+  background: url(../../img/xusong/daiyan/sp_icon.png) no-repeat -185px -161px;
+}
+.expand-detail.expand{background-position: -185px -131px}
+/*bottom button*/
+.bottom-btn{
+  width:100%;
+  font-size: 0;
+  text-align: center;
+  word-spacing: -1px;
+  position: fixed;
+  left:0;
+  bottom: 0;
+  z-index: 10;
+}
+.bottom-btn a,.bottom-btn i,.bottom-btn span{
+  display: inline-block;
+  color:#fff;
+  font-size: 16px;
+  line-height: 50px;
+  vertical-align: middle;
+}
+.bottom-btn a{
+  height: 50px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+a:hover{text-decoration: none}
+.bottom-btn i{
+  width:15px;
+  height: 20px;
+  margin-right:3px;
+  background: url(../../img/xusong/daiyan/sp_trangle.png) no-repeat 0 5px;
+}
+.swsy-vscode{
+  position: absolute;
+  top: -150px;
+  left:50%;
+  margin-left: 159px;
+  display: none;
+}
+/*share*/
+.page-share{
+  color:#fff;
+  font-size: 18px;
+  position: fixed;
+  top:70px;
+  right:80px;
+  overflow: hidden;
+  zoom: 1;
+  z-index: 99;
+}
+.page-share p, .page-share .share_1{
+  float: left;
+  line-height: 30px;
+}
+.page-share .share_1 .share-tsina,
+.page-share .share_1 .share-qzone,
+.page-share .share_1 .share-weixin{
+  padding: 0;
+  width:30px;
+  height: 30px;
+  margin-left: 10px;
+  display: inline-block;
+  cursor: pointer;
+  background: url(../../img/xusong/daiyan/sp_icon.png) no-repeat;
+}
+.page-share .share_1 .share-tsina{background-position: -88px -140px}
+.page-share .share_1 .share-qzone{background-position: -122px -140px}
+.page-share .share_1 .share-weixin{background-position: -52px -140px}
+/*page index number*/
+.page-index{
+  width:50px;
+  position: fixed;
+  bottom:40px;
+  left:50%;
+  margin-left:15px;
+}
+.page-num{
+  height:50px;
+  font-size: 0;
+  word-spacing: -1px;
+  text-align: center;
+  background: url(../../img/xusong/daiyan/sp_icon.png) no-repeat 0 -138px;
+}
+.page-num span{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 18px;
+  line-height: 46px;
+  margin:0 1px;
+  color: #fff;
+}
+@keyframes pageArrow {
+  0%,100%{transform: translateY(0)}50%{transform: translateY(-5px)}
+}
+.page-arrow{
+  display: block;
+  width:50px;
+  height: 20px;
+  margin:10px auto 0;
+  cursor: pointer;
+  animation: pageArrow 2s linear infinite ;
+  background: url("../../img/xusong/daiyan/sp_icon.png") no-repeat -111px -170px;
+}
+.page-index .reback-arrow{background-position: -62px -170px}
+/*背景音乐*/
+.bg-music{
+  width:33px;
+  height:33px;
+  position: fixed;
+  top:70px;
+  left:80px;
+  z-index: 99;
+  cursor: pointer;
+  background: url("../../img/xusong/daiyan/sp_icon.png") no-repeat -86px -198px;
+}
+.bg-music.close{
+  background: url("../../img/xusong/daiyan/sp_icon.png") no-repeat -49px -198px;
+}
+/*视频弹窗*/
+.video-pop{
+  height:100%;
+  width:100%;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 99;
+  background-color: rgba(0,0,0,0.8);
+  display: none;
+}
+:root .video-pop{filter :none}
+.video-pop .video-win{
+  width:800px;
+  height:455px;
+  border:5px solid #7d7a79;
+  background: #000;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin:-233px 0 0 -405px;
+  border-radius: 4px;
+}
+#video{height:400px;position: absolute;top:22px;left:6%;border-radius: 5px}
+.video-pop .play-area{background: #000; position: relative}
+.video-pop .close-video{
+  position: absolute;
+  right:-55px;
+  top:-5px;
+  width:40px;
+  height:40px;
+  background: url("../../img/xusong/daiyan/close_video.png") no-repeat center center;
+  line-height: 99em;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform .2s ease-in-out;
+}
+.video-pop .close-video:hover{
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+/*右侧点点样式重置*/
+#fp-nav{z-index: 3}
+#fp-nav.right{right:58px;}
+#fp-nav ul li, .fp-slidesNav ul li{
+  width:12px;
+  height: 12px;
+  margin:0 0 15px 0;
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+  width:12px;
+  height:12px;
+  left:0;
+  top:0;
+  margin: 0 0 5px 0;
+  background: none;
+  border: 1px solid #fff;
+  transition: all 1s;
+}
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span,
+#fp-nav ul li a.cur span,
+.fp-slidesNav ul li a.cur span,
+#fp-nav ul li:hover a.cur span,
+.fp-slidesNav ul li:hover a.cur span{
+  width:12px;
+  height:12px;
+  margin:0;
+  background: #fff;
+}

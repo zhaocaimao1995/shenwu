@@ -1,0 +1,218 @@
+/*顶部导航*/
+#topBar{
+	position:relative;
+	height:55px;
+	width:100%;
+	min-width:1200px;
+	z-index:100;
+	background:url(../img/index/bg_r.jpg) repeat-x 0 0 #F7F7F7;
+}
+.topBar_inner{
+	position:relative;
+	width:1200px;
+	margin:0 auto;
+}
+/*左侧logo*/
+.logo_img{
+	position:absolute;
+	left:12px;
+	top:8px;
+	width:222px;
+	height:38px;
+	z-index:20;
+}
+/*小图*/
+.topSmallPic{
+	position:absolute;
+	left:250px;
+	top:0;
+	width:450px;
+	height:55px;
+	overflow:hidden;
+}
+/*悬停时显示大图*/
+.topBigPic{
+	position:absolute;
+	z-index:10;
+	left:125px;
+	width:950px;
+	display:none;
+}
+.hover{
+	display:block;
+}
+/*右侧导航*/
+.topNav{
+	position:absolute;
+	right:0;
+	top:0;
+	height:55px;
+	z-index:20;
+}
+.topNav a, .topNav span, .topNavHr span{
+	float:left;
+	padding:0 13px;
+	height:54px;
+	line-height:54px;
+	font-size:14px;
+	color:#000;
+	text-decoration:none;
+	cursor: pointer;
+}
+.topNavHr{height:auto;float: left}
+.topNavHrLink{
+	background: #f3f3f3;
+	float: left;
+	clear: both;
+	width:100%;
+	display: none;
+}
+.topNavHrLinkShow .topNavHrLink{display: block}
+.topNavHrLink a{clear: both}
+.topNavShowList em{
+	display: inline-block;
+	width: 14px;
+	height:12px;
+	margin-left: 2px;
+	background: url(../img/index/ico_list.png) no-repeat 0 0;
+}
+.topNav a:hover, .topNav span:hover, .topNavHr span:hover{
+	background:url(../img/index/nav_hover.png) repeat-x 0 0;
+}
+.topNavHr a:hover{background: #fff;}
+/*topbarGameList*/
+.topbar_game_list{
+	position: absolute;
+	right:0;
+	top:55px;
+	display: none;
+}
+.topbar_show_gamelist .topbar_game_list{
+	display: block;
+}
+.topbar_game_title{
+	background: #efefef;
+	width:515px;
+	height:39px;
+	font-size:16px;
+	color:#2e2e2e;
+	font-weight: bold;
+	overflow: hidden;
+}
+.topbar_pc_title, .topbar_m_title{
+	float:left;
+	width: 257px;
+	text-indent: 17px;
+	line-height: 41px;
+}
+.topbar_game_content{
+	background: rgba(255,255,255,.95);
+	border-bottom: 1px solid #F5F5F5;
+	overflow: hidden;
+}
+.topbar_game_pc, .topbar_game_m{
+	float: left;
+	width: 257px;
+	min-height: 220px;
+	padding-bottom: 15px;
+}
+.topbar_game_pc{border-right:1px solid #E5E5E5}
+.topbar_game_content ul{
+	margin-top:14px;
+	padding-bottom:1px;
+	float:left;
+}
+.topbar_game_content li{
+	float:left;
+	clear:both;
+	width:224px;
+	line-height: 14px;
+	overflow: visible;
+	margin-top:20px;
+	padding-left:20px;
+	position: relative;
+}
+.topbar_game_content li:first-child{margin-top:0}
+.topbar_ico_num{
+	position: absolute;
+	left:20px;
+	top:0;
+	text-align: center;
+	width:12px;
+	height:12px;
+	line-height: 12px;
+	font-size: 12px;
+	color:#959595;
+	border:1px solid #959595;
+	z-index:2;
+}
+.current .topbar_ico_num{
+	background: #e62232;
+	color:#fff;
+	border:1px solid #e62232;
+}
+.topbar_game_name{
+	font-size: 14px;
+	margin-left:20px;
+	color:#848484;
+}
+.topbar_game_content .current .topbar_game_name{display: none}
+.topbar_game_info{
+	display: none;
+	position: relative;
+	width:222px;
+	height:74px;
+	color:#fff;
+	line-height: 22px;
+	border:1px solid #eee;
+	top:0;
+	left:0;
+}
+.topbar_game_content .current .topbar_game_info{display: block}
+.topbar_bgop{
+	background: rgba(0,0,0,.8);
+	position: absolute;
+	left: 0;bottom:0;
+	width:222px;
+	height:22px;
+}
+.topbar_bgop a{
+	float: left;
+	width:111px;
+	height:22px;
+	line-height: 22px;
+	text-align: center;
+	font-size: 12px;
+	color:#fff;
+}
+.topbar_bgop  .topbar_down{
+	width:110px;
+	border-left:1px solid #909092;
+}
+.topbar_game_m .topbar_bgop a{width:74px}
+.topbar_game_m .topbar_bgop  .topbar_down_a,
+.topbar_game_m .topbar_bgop  .topbar_down_i{
+	width:73px;
+	border-left:1px solid #909092;
+}
+.topbar_bottom{
+	width:515px;
+	height:34px;
+	line-height: 34px;
+	background: #f5f5f5;
+	color:#000;
+	text-align: center;
+}
+.topbar_bottom span{
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.topbar_ico_new, .topbar_ico_hot, .topbar_ico_test{
+	display: inline-block;
+	width:14px;
+	height:14px;
+	margin-left: 10px;
+	background: url(../img/duoyigames/icon_hot.png);
+}
+.topbar_ico_test{background: url(../img/duoyigames/ico_test1.png)}
+.topbar_ico_new{background: url(../img/duoyigames/icon_new.png)}

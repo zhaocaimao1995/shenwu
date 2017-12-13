@@ -1,0 +1,121 @@
+/*中部主体内容*/
+.rc_gmss{
+  text-align: right;
+  margin-top:5px;
+  margin-right:40px;
+}
+.rc_gmss input{
+  height:25px;
+  line-height: 25px;
+  border:1px solid #ccc;
+}
+.rc_gmss .rc_btn{
+  width:60px;
+  cursor: pointer;
+  height:29px;
+  color:#fff;
+  background: #333;
+  border-radius: 4px;
+}
+.game_mod{
+  margin:15px auto 30px;
+  padding-bottom: 10px;
+}
+.game_mod h3{
+  height:40px;
+  line-height: 40px;
+  color:#4b4b4b;
+  font-size: 18px;
+  border-bottom: 1px solid #E5E5E5;
+}
+.game_mod p{
+  color:#454545;
+  text-indent: 2em;
+  margin:10px 0 10px 0;
+}
+.game_mod_ul{
+  min-height: 110px;
+  height: auto;
+}
+.game_mod_ul li{
+  float: left;
+  width:149px;
+}
+.game_mod_ul h4{
+  height:22px;
+  overflow: hidden;
+  color:#4FBEB0;
+  font-size: 14px;
+  text-align: center;
+}
+.game_mod_ul li a{
+  display: block;
+  width:100px;
+  height:30px;
+  color:#fff;
+  background: #4FBEB0;
+  line-height: 30px;
+  font-size: 14px;
+  text-align: center;
+  margin:8px auto;
+}
+.game_mod_ul li a:hover{
+  color:#fff;
+  text-decoration: none;
+  background: #900E05;
+}
+/*左侧索引*/
+.ftL62{padding:0 0 20px 0;}
+.gmnav{margin:10px 0 0 0}
+.gmnav1con{
+  position: relative;
+  border:1px solid #d8d6d8;
+}
+.gmnav1con span{
+  cursor: pointer;
+  display: block;
+  height: 45px;
+  line-height: 45px;
+  font-size: 16px;
+  position: relative;
+  text-align: center;
+  clear: both;
+  font-weight: bold;
+  border-bottom: 1px solid rgb(229,229,229);
+  border-top:1px solid #fff;
+  background: url(../img/index/ico_gameNav.png) 205px -160px no-repeat rgb(254,254,254);
+}
+.gmnav1con .span_tit{
+  background-color: #4FBEB0;
+  color:#fff;
+  background-position: 205px 23px;
+  border-top:none;
+  border-bottom-color:#fff;
+}
+.option_pane, .option_pane div{
+  overflow: hidden;
+  height:0;
+}
+.option_pane_on, .option_pane div{
+  overflow: auto;
+  height: auto;
+  background: #f3f6f3;
+}
+.gmnav1con ul div ul{
+  padding:5px 0 5px 32px;
+}
+.gmnav1con ul li{
+  display: inline-block;
+  width:100px;
+  margin:1px 0 0;
+  white-space: nowrap;
+  font-size: 14px;
+  height:26px;
+  line-height: 26px;
+  color:#5d5d5c;
+  overflow: hidden;
+}
+.gmnav1con ul li a{
+  color:#4b4b4b;
+  text-decoration: none;
+}
